@@ -1,0 +1,12 @@
+﻿
+<launch>
+
+	<include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
+		<param name="port" value="9090"/>
+	</include>
+
+	<node name="file_server" pkg="file_server" type="file_server" output="screen"/>
+
+	<node name="joy_to_twist" pkg="revrsr" type="joy_to_twist.py" output="screen"/>
+	
+</launch>
