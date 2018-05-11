@@ -9,4 +9,6 @@
 
 	<node name="joy_to_twist" pkg="revrsr" type="joy_to_twist.py" output="screen"/>
 	
+	<node name="web_video_server" pkg="web_video_server" type="web_video_server" output="screen"/>
+	
 </launch>
